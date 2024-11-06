@@ -11,7 +11,7 @@ const JOTFORM_FORM_ID = '243095265082154'; // Replace with your actual form ID
 // 1. Initialize the webhook on JotForm
 async function initializeWebhook() {
   try {
-    const webhookURL = 'https://your-vercel-deployment-url/api/webhook';
+    const webhookURL = 'https://webhook-jform-i04y3i7pe-udays-projects-42c3d836.vercel.app/api/webhook';
     const response = await axios.post(
       `https://api.jotform.com/form/${JOTFORM_FORM_ID}/webhooks`,
       { webhookURL },
